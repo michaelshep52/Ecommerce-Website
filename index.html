@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Local E-Commerce Test</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+    <nav class="ecommerce-nav">
+        <a href="#products" data-view="products" class="active">Home</a>
+        <!-- Account table needs to be hidden unless they are logged in -->
+        <a href="#account" data-view="account" class="hidden">Account</a>
+        <a href="#login" data-view="login">Login/Register</a>
+        <a href="#cart" data-view="cart">Cart</a>
+        </nav>
+      
+
+  <!-- Sections (You can include more as needed) -->
+  <section id="products" class="ecommerce-section">
+    <h2>Products</h2>
+    <div id="products-container"></div>
+  </section>
+
+  <section id="cart" class="ecommerce-section">
+    <h2>Your Cart</h2>
+    <div class="cart-items"></div>
+    <div class="cart-summary">
+      <p>Total: <span class="cart-total">$0.00</span></p>
+      <button id="cart-button">View Cart</button>
+    </div>
+  </section>
+
+  <section id="account" class="ecommerce-section">
+    <h2>My Account</h2>
+    <!-- Simplified version for demo -->
+    <p>User info will go here</p>
+  </section>
+
+  <!-- Modal (example) -->
+  <div id="cart-modal" class="ecommerce-modal">
+    <div class="modal-content">
+      <span id="close-cart-modal">&times;</span>
+      <h2>Cart Details</h2>
+      <div class="modal-cart-items"></div>
+    </div>
+  </div>
+
+  <!-- API Config (simulate settings.php output) -->
+  <script>
+    const API_CONFIG = {
+      products: "https://fakestoreapi.com/products",
+      categories: "https://fakestoreapi.com/products/categories",
+      cart: "https://fakestoreapi.com/carts",
+      users: "https://fakestoreapi.com/users"
+    };
+  </script>
+
+  <!-- Scripts -->
+  <script src="assets/js/init.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/user.js"></script>
+  <script src="assets/js/categories.js"></script>
+ 
+</body>
+</html>

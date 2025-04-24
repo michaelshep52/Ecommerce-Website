@@ -23,3 +23,24 @@
         </div>
     </div>
 </div>
+<?php
+// templates/modal/login-modal.php
+?>
+<div id="login-modal" class="ecommerce-modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal" data-close="login-modal">&times;</span>
+        <h2>Ecommerce Storefront Login</h2>
+        <form class="modal-login-form">
+            <label for="modal-login-email">Email</label>
+            <input type="email" id="modal-login-email" name="email" required>
+
+            <label for="modal-login-password">Password</label>
+            <input type="password" id="modal-login-password" name="password" required>
+
+            <button type="submit">Log In</button>
+        </form>
+        <hr>
+<!-- Register template and modals need to be created for this -->
+        <p>Don't have an account? <a href="#">Register here</a>.</p>
+    </div>
+</div>

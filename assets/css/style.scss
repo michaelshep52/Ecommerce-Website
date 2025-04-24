@@ -1,0 +1,97 @@
+// === Base Styles (Mobile First) ===
+.product {
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+  
+    .product-image {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .product-name {
+      font-size: 1em;
+      margin-top: 0.5em;
+    }
+  
+    .product-price {
+      font-weight: bold;
+      color: #333;
+    }
+  
+    .add-to-cart {
+      background-color: #ff6f61;
+      color: white;
+      padding: 0.5em;
+      margin-top: 0.5em;
+      width: 100%;
+    }
+  }
+  
+  .cart-items, .modal-cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  // === Tablet Styles ===
+  @media (min-width: 768px) {
+    .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5em;
+  
+      .product-name {
+        font-size: 1.2em;
+      }
+  
+      .product-price {
+        font-size: 1.1em;
+      }
+    }
+  
+    .cart-items, .modal-cart-items {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1.5em;
+    }
+  
+    .btn {
+      font-size: 1.1em;
+      padding: 0.75em 1.25em;
+    }
+  }
+  
+  // === Desktop Styles ===
+  @media (min-width: 1024px) {
+    .product {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+  
+      .product-image {
+        max-width: 150px;
+        margin-right: 1em;
+      }
+  
+      .product-name {
+        font-size: 1.4em;
+      }
+  
+      .add-to-cart {
+        max-width: 150px;
+      }
+    }
+  
+    .ecommerce-section {
+      padding: 3em;
+    }
+  
+    .account-details li,
+    .cart-summary,
+    .checkout-button {
+      font-size: 1.1em;
+    }
+  }
+  
